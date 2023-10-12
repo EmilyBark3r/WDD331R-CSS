@@ -1,4 +1,41 @@
-@charset "UTF-8";
+/* SMALL SCREEN */
+/* NAV BAR SECTION */
+nav li, nav a {
+  color:blue;
+  list-style-type: none;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav li {
+  flex-basis: calc(40% - 50px); 
+  margin-bottom: 10px; 
+}
+
+/* Setting the Stage SECTION */
+/* .container h2 {
+  background-color: rgba(199, 199, 227, 0.496);
+} */
+section.container {
+  background-color: red;
+}
+
+
+
+/* LARGE SCREEN - MEDIA QUERY
+nav ul {
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ 
+ 
+ 
+ */
+/* @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
 :root {
   --color-primary: #3a00ff;
@@ -39,7 +76,6 @@ html {
   overflow-x: hidden;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   font-size: 100%;
@@ -48,13 +84,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Make images easier to work with */
 img {
   display: block;
   max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -62,7 +96,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -452,10 +485,6 @@ nav ul li {
   position: relative;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
 }
 .features li {
   display: grid;
@@ -739,4 +768,4 @@ nav ul li {
   height: 1em;
   margin-right: 0.25em;
   fill: currentColor;
-}
+} */
