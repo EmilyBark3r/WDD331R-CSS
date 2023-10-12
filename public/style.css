@@ -11,7 +11,7 @@ nav ul {
   justify-content: center;
 }
 nav li {
-  flex-basis: calc(40% - 50px); 
+  flex-basis: calc(50% - 50px); 
   margin-bottom: 10px; 
 }
 
@@ -19,9 +19,9 @@ nav li {
 /* .container h2 {
   background-color: rgba(199, 199, 227, 0.496);
 } */
-section.container {
+/* section.container {
   background-color: red;
-}
+} */
 
 
 
