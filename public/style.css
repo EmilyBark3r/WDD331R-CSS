@@ -1,7 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Aclonica&family=Bellota&family=Butcherman&family=Creepster&family=Henny+Penny&family=Irish+Grover&family=Jolly+Lodger&family=Mountains+of+Christmas:wght@700&family=Nosifer&family=Rubik+Wet+Paint&family=Young+Serif&display=swap');
+:root {
+  --color-pumpkin: #FF6D00;
+  --color-black-night: #09090E;
+  --color-green: #99AA38;
+  --color-violet: #240046;
+  --color-text: #720E07;
+  --color-light: #E8E9F3;
+  --color-anchor: #5A352A;
+  /* --font-family: ; */
+  /* font-family: 'Aboreto', serif; */
+  /* font-family: 'Aclonica', serif; */
+  /* font-family: 'Bellota', serif; */
+  /* font-family: 'Butcherman', serif; */
+  /* font-family: 'Creepster', serif; */
+  /* font-family: 'Henny Penny', serif; */
+  /* font-family: 'Irish Grover', serif; */
+  /* font-family: 'Jolly Lodger', serif; */
+  /* font-family: 'Mountains of Christmas', serif; */
+  /* font-family: 'Nosifer', serif; */
+  /* font-family: 'Rubik Wet Paint', serif; */
+  /* font-family: 'Young Serif', serif; */
+
+
+  /* --font-weight-strong: ;
+  --font-size-h1: ;
+  --font-size-h2: ;
+  --font-size-h3: ;
+  --font-size-h4: ;
+  --font-size-text: ;
+  --border-radius: ; */
+}
+
+
+/* p {
+  font-family: 'Aboreto', serif;
+} */
+h1 {
+  font-size: 70px;
+  font-family: 'Mountains of Christmas', serif;
+  color: var(--color-pumpkin);
+}
+h2 {
+  font-family: 'Aclonica', serif;
+  color: var(--color-light);
+  font-size: 25px;
+  padding: 10px;
+}
+/* h3 {
+  font-family: 'Aboreto', serif;
+  color: var(--color-pumpkin);
+}
+h4 {
+  font-family: 'Aboreto', serif;
+  color: var(--color-pumpkin);
+} */
+
+
+
 /* SMALL SCREEN */
 /* NAV BAR SECTION */
 nav li, nav a {
-  color:blue;
+  color: var(--color-green);
+  font-size: 20px;
+  font-family: 'Young Serif', serif;
   list-style-type: none;
   text-decoration: none;
 }
@@ -16,14 +78,18 @@ nav li {
 }
 
 /* Setting the Stage SECTION */
-/* .container h2 {
-  background-color: rgba(199, 199, 227, 0.496);
-} */
-/* section.container {
-  background-color: red;
-} */
+.container h2 {
+  background-color: var(--color-black-night);
+} 
 
 
+/* STAR CODE */
+.link-github svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  fill: orange;
+} 
 
 /* LARGE SCREEN - MEDIA QUERY
 nav ul {
@@ -762,10 +828,5 @@ nav ul li {
     margin-left: 6rem;
   }
 }
+*/
 
-.link-github svg {
-  width: 1em;
-  height: 1em;
-  margin-right: 0.25em;
-  fill: currentColor;
-} */

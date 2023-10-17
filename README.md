@@ -34,11 +34,11 @@ You will need to fork [the main Style Stage repo](https://github.com/5t3ph/style
 <!-- COLORS
 (white)Ghost White: #E8E9F3
 (orange)Pumpkin: #FF6D00
-(black)Licorice: #1F1300
 (black)Night: #09090E
 (green)Apple Green: #99AA38
 (purple)Russian Violet: #240046
 (brown)Capnut mortuum: #5A352A
+(black)Licorice: #1F1300
 (red)Bard Red: #720E07
 (white)Mint Cream: #F3F7F0
 (white)Anti-flash White: #EBEBEB
