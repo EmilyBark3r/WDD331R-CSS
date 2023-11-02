@@ -32,7 +32,9 @@ h1 {
   color: var(--color-primary-alt);
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
@@ -47,14 +49,12 @@ h2 {
   border-radius: 0 40px 0 40px;
 }
 
-#main h2 {
-  background-color: var(--color-background);
-  align-self: center;
+#main h2, #main h3 {
   padding: 0.25em 0.5em;
 }
 
 h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h2);
 }
 
 h4 {
@@ -86,7 +86,8 @@ strong {
 }
 
 a {
-  color: var(--color-anchor);
+  color: var(--color-primary-alt);
+  text-decoration: underline;
 }
 
 #guidelines p:nth-of-type(1),
@@ -109,7 +110,7 @@ main:focus {
   outline: none;
 }
 main h3 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 article .container,
@@ -147,6 +148,13 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+#files a {
+  display: grid;
+  place-content: center;
+  margin: 5vh auto;
+  text-align: center;
+}
+
 .profile {
   width: 95vw;
   max-width: 80ch;
@@ -167,6 +175,7 @@ nav ul li {
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
+  text-decoration: none;
 }
 .profile ul {
   display: flex;
@@ -191,6 +200,7 @@ nav ul li {
 }
 .profile ul li span:nth-child(2) a {
   color: inherit;
+  text-decoration: none;
 }
 @media (min-width: 180ch) {
   .profile {
@@ -213,6 +223,10 @@ nav ul li {
     width: 8ch;
     margin-right: 0;
   }
+}
+
+p a {
+  text-decoration: underline;
 }
 
 .skip-link {
