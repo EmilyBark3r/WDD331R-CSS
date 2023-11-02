@@ -13,11 +13,13 @@ h1 {
     color: var(--color-primary-alt);
 }
 
-h2 {
+h2,
+h3,
+h4 {
     font-size: var(--font-size-h2);
     font-size: clamp(2rem, 4vw, var(--font-size-h2));
     text-align: center;
-    color: #99AA38; 
+    color: #99AA38;
     // var(--color-primary-alt);
     background-color: var(--color-background);
     padding: 0.25em 0.5em;
@@ -28,17 +30,17 @@ h2 {
     // border: 2px solid var(--color-primary-alt);
     padding: 20px;
     align-self: center;
-    border-radius:  0 40px 0 40px;
+    border-radius: 0 40px 0 40px;
 }
 
-#main h2 {
-    background-color: var(--color-background);
-    align-self: center;
+#main h2, #main h3 {
+    // background-color: var(--color-background);
+    // align-self: center;
     padding: 0.25em 0.5em;
 }
 
 h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h2);
 }
 
 h4 {
@@ -79,7 +81,8 @@ strong {
 }
 
 a {
-    color: var(--color-anchor);
+    color: var(--color-primary-alt);
+    text-decoration: underline;
 }
 
 // blockquote {
@@ -144,4 +147,3 @@ a {
         font-weight: var(--font-weight-strong);
     }
 }
-
