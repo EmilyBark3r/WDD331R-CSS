@@ -21,3 +21,14 @@
 //     max-width: 30ch;
 //   }
 // }
+
+header{
+    background-image: url('/images/candy.png');
+    background-repeat: no-repeat;
+
+    &::before{
+        content: url('/images/candy.png');
+    }
+  }
+  
+  

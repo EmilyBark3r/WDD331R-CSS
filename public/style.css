@@ -126,6 +126,14 @@ article,
   padding: 1rem;
 }
 
+header {
+  background-image: url("/images/candy.png");
+  background-repeat: no-repeat;
+}
+header::before {
+  content: url("/images/candy.png");
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
