@@ -17,6 +17,18 @@
   --border-radius: 8px;
 }
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+header {
+  margin: 10px 5px auto;
+}
+
 h1,
 h2,
 h3,
@@ -153,6 +165,15 @@ nav ul li {
   place-content: center;
   margin: 5vh auto;
   text-align: center;
+}
+
+.features li {
+  padding: 1rem;
+  list-style-image: url("/images/pumpkin-20px.png");
+}
+.features li a {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-strong);
 }
 
 .profile {
