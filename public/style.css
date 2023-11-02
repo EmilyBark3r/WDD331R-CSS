@@ -17,17 +17,7 @@
   --border-radius: 8px;
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/* Remove default margin */
-header {
-  margin: 10px 5px auto;
-}
 
 h1,
 h2,
