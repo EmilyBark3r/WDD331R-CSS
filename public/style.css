@@ -17,6 +17,11 @@
   --border-radius: 8px;
 }
 
+ul {
+  list-style-image: url("/images/pumpkin-list.png");
+  max-width: 20px;
+}
+
 h1,
 h2,
 h3,
