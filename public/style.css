@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Creepster&family=Henny+Penny&family=Irish+Grover&family=Jolly+Lodger&family=Mountains+of+Christmas&family=Rubik+Wet+Paint&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
 :root {
   --color-primary: #3a00ff;
   --color-primary-alt: #FF6D00;
@@ -7,7 +11,7 @@
   --color-text: #412d86;
   --color-light: #fff;
   --color-anchor: #3a00ff;
-  --font-family: "Baloo 2", sans-serif;
+  --font-family: "Bebas Neue", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -17,7 +21,21 @@
   --border-radius: 8px;
 }
 
+ul {
+  list-style-image: url("/images/pumpkin-20px.png");
+}
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+header {
+  margin: 10px 5px auto;
+}
 
 h1,
 h2,
@@ -32,6 +50,8 @@ h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
   color: var(--color-primary-alt);
+  font-family: "Metal Mania";
+  text-align: center;
 }
 
 h2,
@@ -43,7 +63,7 @@ h4 {
   color: #99AA38;
   background-color: var(--color-background);
   padding: 0.25em 0.5em;
-  font-family: "Rubik Wet Paint";
+  font-family: "Nosifer";
   box-sizing: border-box;
   box-shadow: 0 20px 50px #240046;
   padding: 20px;
@@ -141,7 +161,7 @@ nav ul a {
   padding: 0.5rem;
   color: var(--color-primary-alt);
   font-size: 20px;
-  font-family: "Young Serif", serif;
+  font-family: "Bebas Neue", serif;
   text-decoration: none;
 }
 nav ul li {

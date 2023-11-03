@@ -59,7 +59,7 @@ $font-sizes: (
   }
 
   --color-anchor: #{$link-color};
-  --font-family: "Baloo 2", sans-serif;
+  --font-family: "Bebas Neue", sans-serif;
   --font-weight-strong: #{$font-weight-strong};
 
   @each $key, $size in $font-sizes {
@@ -71,5 +71,5 @@ $font-sizes: (
 
  ul{
    list-style-image: url("/images/pumpkin-20px.png");
-   max-width: 20px;
+  //  max-width: 20px;
  }
