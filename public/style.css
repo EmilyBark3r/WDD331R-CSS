@@ -17,7 +17,22 @@
   --border-radius: 8px;
 }
 
+ul {
+  list-style-image: url("/images/pumpkin-20px.png");
+  max-width: 20px;
+}
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+header {
+  margin: 10px 5px auto;
+}
 
 h1,
 h2,
