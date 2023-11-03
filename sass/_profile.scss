@@ -1,9 +1,6 @@
 .profile {
-  width: 95vw;
-  max-width: 80ch;
-  margin: 1rem auto 10vh;
-  padding: 1.25rem;
   z-index: 1;
+  border-radius: 0 40px 0 40px;
 
   h4 {
     margin: 0;
@@ -13,33 +10,26 @@
 
   .container {
     display: grid;
-    justify-items: center;
+    // justify-items: center;
     grid-gap: 1rem;
 
     >a {
       min-height: 2em;
       border: 2px solid currentColor;
-      // text-decoration: none;
-      //   color: blue;
     }
   }
 
   ul {
-    // display: flex;
-    // flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
-      // display: flex;
-      padding: 0.45em;
-
       span:nth-child(1) {
-        width: auto;
+        // width: auto;
         margin-right: 0.25em;
-        font-weight: var(--font-weight-strong);
+        // font-weight: var(--font-weight-strong);
       }
 
       span:nth-child(2) {
@@ -58,23 +48,10 @@
     position: fixed;
     right: 2vmin;
     bottom: 2vmin;
-    max-width: 30ch;
+    // max-width: 30ch;
     margin-bottom: 0;
-    border-radius: var(--border-radius);
     background-color: var(--color-background);
     box-shadow: 0 20px 50px #240046;
 
-    ul {
-      justify-content: left;
-
-      li {
-        padding: 0;
-
-        // span:nth-child(1) {
-        //   width: 8ch;
-        //   margin-right: 0;
-        // }
-      }
-    }
   }
 }

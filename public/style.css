@@ -165,7 +165,7 @@ nav ul a {
   display: inline-grid;
   padding: 0.5rem;
   color: var(--color-primary-alt);
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Bebas Neue", serif;
   text-decoration: none;
 }
@@ -198,11 +198,8 @@ nav ul li {
 }
 
 .profile {
-  width: 95vw;
-  max-width: 80ch;
-  margin: 1rem auto 10vh;
-  padding: 1.25rem;
   z-index: 1;
+  border-radius: 0 40px 0 40px;
 }
 .profile h4 {
   margin: 0;
@@ -211,7 +208,6 @@ nav ul li {
 }
 .profile .container {
   display: grid;
-  justify-items: center;
   grid-gap: 1rem;
 }
 .profile .container > a {
@@ -224,13 +220,8 @@ nav ul li {
   padding: 0;
   list-style: none;
 }
-.profile ul li {
-  padding: 0.45em;
-}
 .profile ul li span:nth-child(1) {
-  width: auto;
   margin-right: 0.25em;
-  font-weight: var(--font-weight-strong);
 }
 .profile ul li span:nth-child(2) {
   flex-grow: 1;
@@ -245,17 +236,9 @@ nav ul li {
     position: fixed;
     right: 2vmin;
     bottom: 2vmin;
-    max-width: 30ch;
     margin-bottom: 0;
-    border-radius: var(--border-radius);
     background-color: var(--color-background);
     box-shadow: 0 20px 50px #240046;
-  }
-  .profile ul {
-    justify-content: left;
-  }
-  .profile ul li {
-    padding: 0;
   }
 }
 
