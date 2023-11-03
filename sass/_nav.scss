@@ -1,8 +1,9 @@
 nav {
   ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    // flex-wrap: wrap
+    justify-content: space-between;
     list-style: none;
     flex-shrink: 0;
 

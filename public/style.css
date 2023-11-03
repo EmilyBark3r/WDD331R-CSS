@@ -17,7 +17,21 @@
   --border-radius: 8px;
 }
 
+ul {
+  list-style-image: url("/images/pumpkin-20px.png");
+}
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+header {
+  margin: 10px 5px auto;
+}
 
 h1,
 h2,
@@ -131,8 +145,8 @@ article,
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   flex-shrink: 0;
 }
