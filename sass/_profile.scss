@@ -16,24 +16,24 @@
     justify-items: center;
     grid-gap: 1rem;
 
-    > a {
+    >a {
       min-height: 2em;
       border: 2px solid currentColor;
-      text-decoration: none;
-    //   color: blue;
+      // text-decoration: none;
+      //   color: blue;
     }
   }
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
-      display: flex;
+      // display: flex;
       padding: 0.45em;
 
       span:nth-child(1) {
@@ -65,15 +65,15 @@
     box-shadow: 0 20px 50px #240046;
 
     ul {
-      justify-content: unset;
+      justify-content: left;
 
       li {
         padding: 0;
 
-        span:nth-child(1) {
-          width: 8ch;
-          margin-right: 0;
-        }
+        // span:nth-child(1) {
+        //   width: 8ch;
+        //   margin-right: 0;
+        // }
       }
     }
   }
