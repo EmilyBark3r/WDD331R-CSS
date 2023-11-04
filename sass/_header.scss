@@ -46,12 +46,10 @@ header{
         p{
             grid-column: 1/2;
         }
-        a {
+        a:nth-child(4) {
             grid-column: 2/2;
             grid-row: 1/2;
-            span{
-                
-            }
+            margin-left: -100%;
         }
     }
     &::after{
@@ -64,4 +62,8 @@ header{
         margin-left: 40%;
     }
 
+}
+
+@media (min-width: 180ch) {
+    
 }
