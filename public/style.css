@@ -173,9 +173,10 @@ header .container h2 {
 header .container p {
   grid-column: 1/2;
 }
-header .container a {
+header .container a:nth-child(4) {
   grid-column: 2/2;
   grid-row: 1/2;
+  margin-left: -100%;
 }
 header::after {
   content: "";
