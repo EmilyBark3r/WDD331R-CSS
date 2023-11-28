@@ -138,6 +138,55 @@ article .container,
   margin-left: auto;
 }
 
+#styles::after {
+  content: "";
+  background-image: url("/images/tombstone-150 .png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 150px;
+  display: block;
+  margin-left: 40%;
+}
+
+#about .container:nth-child(1)::after {
+  content: "";
+  background-image: url("/images/bats-150px.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 150px;
+  display: block;
+  margin-left: 40%;
+}
+#about .container:nth-child(2)::after {
+  content: "";
+  background-image: url("/images/black-cat-150px.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 150px;
+  display: block;
+  margin-left: 40%;
+}
+
+#guidelines::after {
+  content: "";
+  background-image: url("/images/bunting-300px.png");
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 300px;
+  display: block;
+  margin-left: 20%;
+}
+
+#contribute .container:nth-child(2)::after {
+  content: "";
+  background-image: url("/images/death-150px.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 150px;
+  display: block;
+  margin-left: 40%;
+}
+
 article,
 #styles {
   padding: 1rem;
