@@ -26,15 +26,9 @@ ul {
 }
 
 /* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Remove default margin */
 header {
-  margin: 10px 5px auto;
+  margin: 10px 5px;
 }
 
 h1,
@@ -149,45 +143,62 @@ article,
   padding: 1rem;
 }
 
-header::before {
-  content: "";
-  background-image: url("/images/spider-65px.png");
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 65px;
-  display: block;
-  margin-left: 10%;
-}
-header .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-header .container h1 {
-  grid-column: 1/2;
-  text-align: left;
-}
-header .container h2 {
-  grid-column: 1/2;
-  text-align: left;
-}
-header .container p {
-  grid-column: 1/2;
-}
-header .container a:nth-child(4) {
-  grid-column: 2/2;
-  grid-row: 1/2;
-  margin-left: -100%;
-}
 header::after {
   content: "";
   background-image: url("/images/ghost-150px.png");
   background-repeat: no-repeat;
-  width: 50%;
+  width: 97%;
   height: 150px;
   display: block;
-  margin-left: 40%;
+  margin-left: 2%;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+header .container h1 {
+  grid-column: 1/4;
+  text-align: center;
+}
+header .container h2 {
+  grid-column: 1/4;
+  text-align: center;
+}
+header .container p {
+  grid-column: 1/4;
+  text-align: center;
+}
+header .container a:nth-child(4) {
+  grid-column: 3/4;
 }
 
+@keyframes flip {
+  30% {
+    transform: scaleX(-1);
+  }
+}
+@media (min-width: 800px) {
+  header::after {
+    content: "";
+    background-image: url("/images/ghost-150px.png");
+    background-repeat: repeat;
+    width: 97%;
+    height: 150px;
+    display: block;
+    margin-left: 2%;
+  }
+  header .container a:nth-child(4) {
+    grid-column: 2/3;
+  }
+  header .container a:nth-child(4)::after {
+    content: "";
+    background-image: url("/images/bat-65px.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 65px;
+    display: block;
+  }
+}
 nav {
   background-color: var(--color-background);
   box-shadow: 0 20px 55px #E8E9F3;

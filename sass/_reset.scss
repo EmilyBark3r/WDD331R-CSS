@@ -1,11 +1,11 @@
 /* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 
 /* Remove default margin */
 header {
-  margin: 10px 5px auto;
+  margin: 10px 5px;
 }
