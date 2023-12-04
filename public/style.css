@@ -11,7 +11,8 @@
   --color-text: #412d86;
   --color-light: #fff;
   --color-anchor: #3a00ff;
-  --font-family: "Bebas Neue", sans-serif;
+  --font-family: "Bebas Neue",
+  sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -65,7 +66,8 @@ h4 {
   border-radius: 0 40px 0 40px;
 }
 
-#main h2, #main h3 {
+#main h2,
+#main h3 {
   padding: 0.25em 0.5em;
 }
 
@@ -115,6 +117,8 @@ a {
 body {
   background-color: var(--color-background);
   color: #E8E9F3;
+  margin: 0px;
+  padding: 0px;
   font-family: var(--font-family);
 }
 
@@ -169,12 +173,11 @@ article .container,
 
 #guidelines::after {
   content: "";
-  background-image: url("/images/bunting-300px.png");
-  background-repeat: no-repeat;
-  width: 80%;
-  height: 300px;
+  background-image: url("/images/bunting100px.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100px;
   display: block;
-  margin-left: 20%;
 }
 
 #contribute .container:nth-child(2)::after {
@@ -187,19 +190,19 @@ article .container,
   margin-left: 40%;
 }
 
-article,
-#styles {
-  padding: 1rem;
+header {
+  margin: 0;
+  background: #09090e;
+  background: linear-gradient(0deg, #09090e 36%, #720e07 94%, #720e07 98%);
 }
-
 header::after {
   content: "";
-  background-image: url("/images/ghost-150px.png");
+  background-image: url("/images/ghostParty150Height.png");
   background-repeat: no-repeat;
-  width: 97%;
+  width: 100%;
   height: 150px;
   display: block;
-  margin-left: 2%;
+  margin-left: 25%;
 }
 header .container {
   display: grid;
@@ -229,12 +232,13 @@ header .container a:nth-child(4) {
 @media (min-width: 800px) {
   header::after {
     content: "";
-    background-image: url("/images/ghost-150px.png");
+    background-image: url("/images/ghostParty150Height.png");
     background-repeat: repeat;
-    width: 97%;
+    background-position: center;
+    width: 94%;
     height: 150px;
     display: block;
-    margin-left: 2%;
+    margin-left: 3%;
   }
   header .container a:nth-child(4) {
     grid-column: 2/3;
@@ -298,49 +302,47 @@ nav ul li {
 
 .profile {
   z-index: 1;
-  border-radius: 0 40px 0 40px;
+  border-radius: 0;
 }
 .profile h4 {
-  margin: 0;
   color: var(--color-primary-alt);
   text-align: center;
 }
 .profile .container {
   display: grid;
-  grid-gap: 1rem;
+  justify-items: center;
 }
 .profile .container > a {
+  margin-bottom: 12px;
   min-height: 2em;
   border: 2px solid currentColor;
 }
 .profile ul {
   justify-content: center;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
 .profile ul li span:nth-child(1) {
   margin-right: 0.25em;
 }
-.profile ul li span:nth-child(2) {
-  flex-grow: 1;
-  word-break: break-word;
-}
-.profile ul li span:nth-child(2) a {
-  color: inherit;
-  text-decoration: none;
-}
 @media (min-width: 180ch) {
   .profile {
     position: fixed;
-    right: 2vmin;
-    bottom: 2vmin;
+    right: 0;
+    top: 0;
     margin-bottom: 0;
     background-color: var(--color-background);
     box-shadow: 0 20px 50px #240046;
   }
 }
 
+.page-footer {
+  margin: 0;
+  background: #09090e;
+  background: linear-gradient(180deg, #09090e 0%, #720e07 31%);
+}
 .page-footer ul {
   display: flex;
   flex-direction: column;
@@ -361,7 +363,6 @@ nav ul li {
   margin-bottom: 10px;
 }
 .page-footer p:first-child {
-  margin-top: 3rem;
   text-align: center;
 }
 .page-footer p a {

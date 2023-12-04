@@ -1,12 +1,17 @@
 header {
+    margin: 0;
+    background: rgb(9, 9, 14);
+    background: linear-gradient(0deg, rgba(9, 9, 14, 1) 36%, rgba(114, 14, 7, 1) 94%, rgba(114, 14, 7, 1) 98%);
+
     &::after {
         content: '';
-        background-image: url('/images/ghost-150px.png');
+        background-image: url('/images/ghostParty150Height.png');
         background-repeat: no-repeat;
-        width: 97%;
+        width: 100%;
         height: 150px;
         display: block;
-        margin-left: 2%;
+        margin-left: 25%;
+        // margin-top: 0%;
         // animation: flip 10s infinite;
         // background-attachment: fixed;
     }
@@ -50,12 +55,14 @@ header {
     header {
         &::after {
             content: '';
-            background-image: url('/images/ghost-150px.png');
+            background-image: url('/images/ghostParty150Height.png');
             background-repeat: repeat;
-            width: 97%;
+            // background-attachment: fixed;
+            background-position: center;
+            width: 94%;
             height: 150px;
             display: block;
-            margin-left: 2%;
+            margin-left: 3%;
             // animation: flip 4s infinte;
         }
 
@@ -80,6 +87,6 @@ header {
                 }
             }
         }
-        
+
     }
 }

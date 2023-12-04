@@ -4,34 +4,28 @@ $color-secondary: #99AA38 !default;
 $color-background: #09090E !default;
 
 
-$brand-colors: (
-  primary: $color-primary,
+$brand-colors: (primary: $color-primary,
   primary-alt: $color-primary-alt,
   secondary: $color-secondary,
 ) !default;
 
-$color-body: scale-color(
-  $color-primary,
+$color-body: scale-color($color-primary,
   $lightness: -30%,
-  $saturation: -50%
-) !default;
+  $saturation: -50%) !default;
 $color-gray: mix(#767676, $color-body, 70%) !default;
 
-$colors: map-merge(
-  $brand-colors,
-  (
-    background: $color-background,
+$colors: map-merge($brand-colors,
+  (background: $color-background,
     text: $color-body,
     light: #fff,
-  )
-);
+  ));
 
 @function color($key) {
   @return map-get($colors, $key);
 }
 
 @function svgColor($color) {
-  @return "%23" + str-slice("#{color($color)}", 2, -1);
+  @return "%23"+str-slice("#{color($color)}", 2, -1);
 }
 
 $link-color: color(primary) !default;
@@ -44,8 +38,7 @@ $font-size-h3: 2rem !default;
 $font-size-h4: 1.35rem !default;
 $font-size-text: 1.15rem !default;
 
-$font-sizes: (
-  h1: $font-size-h1,
+$font-sizes: (h1: $font-size-h1,
   h2: $font-size-h2,
   h3: $font-size-h3,
   h4: $font-size-h4,
@@ -54,22 +47,26 @@ $font-sizes: (
 
 // stylelint-disable
 :root {
-  @each $key, $color in $colors {
+
+  @each $key,
+  $color in $colors {
     --color-#{$key}: #{$color};
   }
 
   --color-anchor: #{$link-color};
-  --font-family: "Bebas Neue", sans-serif;
+  --font-family: "Bebas Neue",
+  sans-serif;
   --font-weight-strong: #{$font-weight-strong};
 
-  @each $key, $size in $font-sizes {
+  @each $key,
+  $size in $font-sizes {
     --font-size-#{$key}: #{$size};
   }
 
   --border-radius: #{$border-radius};
 }
 
- ul{
-   list-style-image: url("/images/pumpkin-20px.png");
+ul {
+  list-style-image: url("/images/pumpkin-20px.png");
   //  max-width: 20px;
- }
+}

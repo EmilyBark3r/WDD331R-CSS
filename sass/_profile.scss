@@ -1,19 +1,19 @@
 .profile {
   z-index: 1;
-  border-radius: 0 40px 0 40px;
+  border-radius: 0;
 
   h4 {
-    margin: 0;
+    // margin: 0;
     color: var(--color-primary-alt);
     text-align: center;
   }
 
   .container {
     display: grid;
-    // justify-items: center;
-    grid-gap: 1rem;
+    justify-items: center;
 
     >a {
+      margin-bottom: 12px;
       min-height: 2em;
       border: 2px solid currentColor;
     }
@@ -22,6 +22,7 @@
   ul {
     justify-content: center;
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
     list-style: none;
 
@@ -32,22 +33,22 @@
         // font-weight: var(--font-weight-strong);
       }
 
-      span:nth-child(2) {
-        flex-grow: 1;
-        word-break: break-word;
+      // span:nth-child(2) {
+      //   flex-grow: 1;
+      //   word-break: break-word;
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-      }
+      //   // a {
+      //   //   color: inherit;
+      //   //   text-decoration: none;
+      //   // }
+      // }
     }
   }
 
   @media (min-width: 180ch) {
     position: fixed;
-    right: 2vmin;
-    bottom: 2vmin;
+    right: 0;
+    top: 0;
     // max-width: 30ch;
     margin-bottom: 0;
     background-color: var(--color-background);
