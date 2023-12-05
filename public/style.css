@@ -152,6 +152,8 @@ article .container,
   animation: rotateLeftRight 2s infinite;
   transform-origin: center;
 }
+
+/* Keyframes for rotating animation */
 @keyframes rotateLeftRight {
   0%,
   100% {
@@ -159,29 +161,6 @@ article .container,
   }
   50% {
     transform: rotate(-5deg);
-  }
-}
-#about .container:nth-child(2)::after {
-  content: "";
-  background-image: url("/images/ghost-150px.png");
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 150px;
-  display: block;
-  margin-left: 40%;
-  animation: shakeUp 3s infinite;
-}
-
-/* Keyframes for shaking animation */
-@keyframes shakeUp {
-  0% {
-    transform: translateY(5px);
-  }
-  50% {
-    transform: translateY(25px);
-  }
-  100% {
-    transform: translateY(5px);
   }
 }
 /* Guidelines section styles */
@@ -310,7 +289,9 @@ article .container,
   }
 
   /* Contribute section styles for larger screens */
-  /* Keyframes for eyeball flying animation on larger screens */
+  #contribute {
+    /* Keyframes for eyeball flying animation on larger screens */
+  }
   #contribute .container:nth-child(2)::after {
     content: "";
     background-image: url("/images/death.png");
