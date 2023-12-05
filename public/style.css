@@ -155,14 +155,12 @@ article .container,
 
 /* Keyframes for shaking animation */
 @keyframes rotateLeftRight {
-  0% {
-    transform: translateY(5px);
+  0%,
+  100% {
+    transform: rotate(0deg);
   }
   50% {
-    transform: translateY(25px);
-  }
-  100% {
-    transform: translateY(5px);
+    transform: rotate(-5deg);
   }
 }
 /* Guidelines section styles */
