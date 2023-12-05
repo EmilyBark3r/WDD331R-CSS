@@ -143,7 +143,7 @@ article .container,
 /* About section styles */
 #about .container:nth-child(1)::after {
   content: "";
-  background-image: url("/images/bats-150px.png");
+  background-image: url("/images/tombstone-150 .png");
   background-repeat: no-repeat;
   width: 50%;
   height: 150px;
