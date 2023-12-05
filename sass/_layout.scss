@@ -64,19 +64,17 @@ article,
   }
   
 
-  .container:nth-child(2) {
-    &::after {
-      content: '';
-      background-image: url('/images/ghost-150px.png');
-      background-repeat: no-repeat;
-      width: 50%;
-      height: 150px;
-      display: block;
-      margin-left: 40%;
-      margin-bottom: 10%;
-      animation: shakeUp 3s infinite;
-    }
-  }
+  // .container:nth-child(2) {
+  //   &::after {
+  //     content: '';
+  //     background-image: url('/images/black-cat-150px.png');
+  //     background-repeat: no-repeat;
+  //     width: 50%;
+  //     height: 150px;
+  //     display: block;
+  //     margin-left: 40%;
+  //   }
+  // }
 }
 
 @keyframes shakeUp {
@@ -157,26 +155,28 @@ article,
     }
   }
 
-  // #styles {
-  //   &::after {
-  //     content: '';
-  //     background-image: url('/images/tombstone-150 .png');
-  //     background-repeat: no-repeat;
-  //     width: 50%;
-  //     height: 150px;
-  //     display: block;
-  //     margin-left: 40%;
-  //   }
-  // }
+  #styles {
+    &::before {
+      content: '';
+      background-image: url('/images/tombstone.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      // height: 150px;
+      display: block;
+      margin-top: 20%;
+      margin-left: 70%;
+    }
+  }
 
   #about {
     .container:nth-child(1) {
       &::after {
         content: '';
-        background-image: url('/images/tombstone-150 .png');
+        background-image: url('/images/bats.png');
         background-repeat: no-repeat;
-        width: 50%;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         display: block;
         margin-left: 40%;
        
@@ -184,7 +184,7 @@ article,
     }
 
     .container:nth-child(2) {
-      &::after {
+      &::before {
         content: '';
         background-image: url('/images/ghost-150px.png');
         background-repeat: no-repeat;
@@ -214,13 +214,26 @@ article,
     .container:nth-child(2) {
       &::after {
         content: '';
-        background-image: url('/images/death-150px.png');
+        background-image: url('/images/death.png');
         background-repeat: no-repeat;
-        width: 50%;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         display: block;
-        margin-left: 40%;
+        margin-left: 2%;
       }
     }
+
+    // .container:nth-child(1) {
+    //   &::after {
+    //     content: '';
+    //     background-image: url('/images/eyeball-300px.png');
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 300px;
+    //     display: block;
+    //     margin-top: 15%;
+    //     margin-left: 20%;
+    //   }
+    // }
   }
 }
