@@ -38,7 +38,7 @@ article,
   .container:nth-child(1) {
     &::after {
       content: '';
-      background-image: url('/images/tombstone-150 .png');
+      background-image: url('/images/bats-150px.png');
       background-repeat: no-repeat;
       width: 50%;
       height: 150px;
@@ -46,6 +46,18 @@ article,
       margin-left: 40%;
       animation: rotateLeftRight 2s infinite;
       transform-origin: center;
+    }
+  }
+
+  @keyframes rotateLeftRight {
+
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(-5deg);
     }
   }
 
@@ -188,7 +200,7 @@ article,
         height: 100%;
         display: block;
         margin-left: 40%;
-       
+
       }
     }
 
