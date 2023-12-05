@@ -1,4 +1,4 @@
-// stylelint-disable no-descending-specificity
+/* Base styles for the body */
 body {
   background-color: var(--color-background);
   color: #E8E9F3;
@@ -7,6 +7,7 @@ body {
   font-family: var(--font-family);
 }
 
+/* Styles for the main section */
 main {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -20,6 +21,7 @@ main {
   }
 }
 
+/* Styles for common containers */
 article,
 .page-footer,
 #styles {
@@ -31,18 +33,7 @@ article,
   }
 }
 
-// #styles {
-//   &::after {
-//     content: '';
-//     background-image: url('/images/tombstone-150 .png');
-//     background-repeat: no-repeat;
-//     width: 50%;
-//     height: 150px;
-//     display: block;
-//     margin-left: 40%;
-//   }
-// }
-
+/* About section styles */
 #about {
   .container:nth-child(1) {
     &::after {
@@ -53,36 +44,65 @@ article,
       height: 150px;
       display: block;
       margin-left: 40%;
+      animation: rotateLeftRight 2s infinite;
+      transform-origin: center;
     }
   }
 
-  // .container:nth-child(2) {
-  //   &::after {
-  //     content: '';
-  //     background-image: url('/images/black-cat-150px.png');
-  //     background-repeat: no-repeat;
-  //     width: 50%;
-  //     height: 150px;
-  //     display: block;
-  //     margin-left: 40%;
-  //   }
-  // }
+  @keyframes rotateLeftRight {
+
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(-5deg);
+    }
+  }
+
+  .container:nth-child(2) {
+    &::after {
+      content: '';
+      background-image: url('/images/ghost-150px.png');
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 150px;
+      display: block;
+      margin-left: 40%;
+      animation: shakeUp 3s infinite;
+    }
+  }
 }
 
-// Halloween Banner
+/* Keyframes for shaking animation */
+@keyframes shakeUp {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/* Guidelines section styles */
 #guidelines {
   &::after {
     content: '';
     background-image: url('/images/bunting100px.png');
     background-repeat: repeat;
-    // background-size: cover;
     width: 100%;
     height: 100px;
     display: block;
-    // margin: 5%;
   }
 }
 
+/* Contribute section styles */
 #contribute {
   .container:nth-child(2) {
     &::after {
@@ -93,10 +113,27 @@ article,
       height: 150px;
       display: block;
       margin-left: 40%;
+      animation: disappear 3s infinite;
     }
   }
 }
 
+/* Keyframes for disappearing animation */
+@keyframes disappear {
+
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media query for larger screens */
 @media (min-width: 992px) {
   main {
     #about {
@@ -122,7 +159,6 @@ article,
 
     .container:nth-child(1) {
       grid-column: 1;
-      // grid-row: 2;
     }
 
     footer {
@@ -140,6 +176,7 @@ article,
     }
   }
 
+  /* Styles for the tombstone */
   #styles {
     &::before {
       content: '';
@@ -147,13 +184,13 @@ article,
       background-repeat: no-repeat;
       width: 100%;
       height: 100%;
-      // height: 150px;
       display: block;
       margin-top: 20%;
       margin-left: 70%;
     }
   }
 
+  /* About section styles for larger screens */
   #about {
     .container:nth-child(1) {
       &::after {
@@ -168,32 +205,47 @@ article,
     }
 
     .container:nth-child(2) {
-      &::before {
+      &::after {
         content: '';
-        background-image: url('/images/black-cat-150px.png');
+        background-image: url('/images/ghost-150px.png');
         background-repeat: no-repeat;
         width: 50%;
         height: 150px;
         display: block;
         margin-left: 40%;
+        animation: shakeUp 3s infinite;
       }
     }
   }
 
-  // Halloween Banner
+  /* Keyframes for shaking animation on larger screens */
+  @keyframes shakeUp {
+    0% {
+      transform: translateY(20px);
+    }
+
+    50% {
+      transform: translateY(50px);
+    }
+
+    100% {
+      transform: translateY(20px);
+    }
+  }
+
+  /* Guidelines section styles for larger screens */
   #guidelines {
     &::after {
       content: '';
       background-image: url('/images/bunting100px.png');
       background-repeat: repeat;
-      // background-size: cover;
       width: 100%;
       height: 100px;
       display: block;
-      // margin: 5%;
     }
   }
 
+  /* Contribute section styles for larger screens */
   #contribute {
     .container:nth-child(2) {
       &::after {
@@ -207,17 +259,52 @@ article,
       }
     }
 
-    // .container:nth-child(1) {
-    //   &::after {
-    //     content: '';
-    //     background-image: url('/images/eyeball-300px.png');
-    //     background-repeat: no-repeat;
-    //     width: 100%;
-    //     height: 300px;
-    //     display: block;
-    //     margin-top: 15%;
-    //     margin-left: 20%;
-    //   }
-    // }
+    .container:nth-child(1) {
+      &::after {
+        content: '';
+        background-image: url('/images/eyeball-300px-fh.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150%;
+        display: block;
+        margin-top: 15%;
+        margin-left: 20%;
+        transform: rotate(30deg);
+        animation: eyeballFlying 3.7s infinite ease-out;
+      }
+    }
+
+    /* Keyframes for eyeball flying animation on larger screens */
+    @keyframes eyeballFlying {
+      0% {
+        transform: translate(0, 0);
+        background-image: url('/images/eyeball-300px.png');
+      }
+
+      20% {
+        transform: translate(15px, -15px);
+        background-image: url('/images/eyeball-300px-fh.png');
+      }
+
+      40% {
+        transform: translate(30px, 0);
+        background-image: url('/images/eyeball-300px-fhfv.png');
+      }
+
+      // 60% {
+      //   transform: translate(15px, 15px);
+      //   background-image: url('/images/eyeball-300px-fv.png');
+      // }
+
+      // 80% {
+      //   transform: translate(0, 0);
+      //   background-image: url('/images/eyeball-300px.png');
+      // }
+
+      100% {
+        transform: translate(0, 0);
+        background-image: url('/images/eyeball-300px.png');
+      }
+    }
   }
 }

@@ -11,10 +11,23 @@ header {
         height: 150px;
         display: block;
         margin-left: 25%;
-        // margin-top: 0%;
-        // animation: flip 10s infinite;
-        // background-attachment: fixed;
+        animation: ghostPartyAnimation 2s linear infinite;
     }
+
+    @keyframes ghostPartyAnimation {
+        0% {
+            transform: translateX(-10px);
+        }
+
+        50% {
+            transform: translateX(20px);
+        }
+
+        100% {
+            transform: translateX(5px);
+        }
+    }
+
 
     .container {
         display: grid;
@@ -63,7 +76,7 @@ header {
             height: 150px;
             display: block;
             margin-left: 3%;
-            // animation: flip 4s infinte;
+            animation: none;
         }
 
 
@@ -80,10 +93,6 @@ header {
                     width: 50%;
                     height: 65px;
                     display: block;
-                    // margin-left: 30%;
-                    // margin-bottom: 0px;
-                    // margin-top: -10%;
-                    // margin-top: 0;
                 }
             }
         }
