@@ -47,27 +47,44 @@ article,
   .container:nth-child(1) {
     &::after {
       content: '';
-      background-image: url('/images/bats-150px.png');
+      background-image: url('/images/tombstone-150 .png');
       background-repeat: no-repeat;
       width: 50%;
       height: 150px;
       display: block;
       margin-left: 40%;
+      animation: shake 0.3s ease-in-out infinite;
     }
   }
+
+  @keyframes shake {
+    0% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    100% { transform: translateX(-2px); }
+  }
+  
 
   .container:nth-child(2) {
     &::after {
       content: '';
-      background-image: url('/images/black-cat-150px.png');
+      background-image: url('/images/ghost-150px.png');
       background-repeat: no-repeat;
       width: 50%;
       height: 150px;
       display: block;
       margin-left: 40%;
+      margin-bottom: 10%;
+      animation: shakeUp 3s infinite;
     }
   }
 }
+
+@keyframes shakeUp {
+  0% {transform: translateY(20px);}
+  50% {transform: translateY(50px);}
+  100% {transform: translateY(20px);}
+}
+
 
 // Halloween Banner
 #guidelines {
@@ -156,19 +173,20 @@ article,
     .container:nth-child(1) {
       &::after {
         content: '';
-        background-image: url('/images/bats-150px.png');
+        background-image: url('/images/tombstone-150 .png');
         background-repeat: no-repeat;
         width: 50%;
         height: 150px;
         display: block;
         margin-left: 40%;
+       
       }
     }
 
     .container:nth-child(2) {
       &::after {
         content: '';
-        background-image: url('/images/black-cat-150px.png');
+        background-image: url('/images/ghost-150px.png');
         background-repeat: no-repeat;
         width: 50%;
         height: 150px;
