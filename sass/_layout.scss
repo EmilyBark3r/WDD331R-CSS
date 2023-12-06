@@ -2,8 +2,8 @@
 body {
   background-color: var(--color-background);
   color: #E8E9F3;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: var(--font-family);
 }
 
@@ -116,6 +116,11 @@ article,
       animation: disappear 3s infinite;
     }
   }
+
+  footer {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 /* Keyframes for disappearing animation */
@@ -201,7 +206,6 @@ article,
         height: 100%;
         display: block;
         margin-left: 40%;
-
       }
     }
 
@@ -273,39 +277,30 @@ article,
         transform: rotate(30deg);
         animation: eyeballFlying 3.7s infinite ease-out;
       }
+
+    }
+  }
+
+  /* Keyframes for eyeball flying animation on larger screens */
+  @keyframes eyeballFlying {
+    0% {
+      transform: translate(0, 0);
+      background-image: url('/images/eyeball-300px.png');
     }
 
-    /* Keyframes for eyeball flying animation on larger screens */
-    @keyframes eyeballFlying {
-      0% {
-        transform: translate(0, 0);
-        background-image: url('/images/eyeball-300px.png');
-      }
+    20% {
+      transform: translate(15px, -15px);
+      background-image: url('/images/eyeball-300px-fh.png');
+    }
 
-      20% {
-        transform: translate(15px, -15px);
-        background-image: url('/images/eyeball-300px-fh.png');
-      }
+    40% {
+      transform: translate(30px, 0);
+      background-image: url('/images/eyeball-300px-fhfv.png');
+    }
 
-      40% {
-        transform: translate(30px, 0);
-        background-image: url('/images/eyeball-300px-fhfv.png');
-      }
-
-      // 60% {
-      //   transform: translate(15px, 15px);
-      //   background-image: url('/images/eyeball-300px-fv.png');
-      // }
-
-      // 80% {
-      //   transform: translate(0, 0);
-      //   background-image: url('/images/eyeball-300px.png');
-      // }
-
-      100% {
-        transform: translate(0, 0);
-        background-image: url('/images/eyeball-300px.png');
-      }
+    100% {
+      transform: translate(0, 0);
+      background-image: url('/images/eyeball-300px.png');
     }
   }
 }
