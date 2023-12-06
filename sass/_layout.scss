@@ -38,7 +38,7 @@ article,
   .container:nth-child(1) {
     &::after {
       content: '';
-      background-image: url('/images/tombstone-150 .png');
+      background-image: url('/images/bats-150px.png');
       background-repeat: no-repeat;
       width: 50%;
       height: 150px;
@@ -49,17 +49,30 @@ article,
     }
   }
 
-  // .container:nth-child(2) {
-  //   &::after {
-  //     content: '';
-  //     background-image: url('/images/black-cat-150px.png');
-  //     background-repeat: no-repeat;
-  //     width: 50%;
-  //     height: 150px;
-  //     display: block;
-  //     margin-left: 40%;
-  //   }
-  // }
+  @keyframes rotateLeftRight {
+
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(-5deg);
+    }
+  }
+
+  .container:nth-child(2) {
+    &::after {
+      content: '';
+      background-image: url('/images/ghost-150px.png');
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 150px;
+      display: block;
+      margin-left: 40%;
+      animation: shakeUp 3s infinite;
+    }
+  }
 }
 
 /* Keyframes for shaking animation */
@@ -188,7 +201,7 @@ article,
         height: 100%;
         display: block;
         margin-left: 40%;
-       
+
       }
     }
 
