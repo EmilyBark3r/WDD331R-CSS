@@ -161,6 +161,16 @@ article .container,
     transform: rotate(-5deg);
   }
 }
+#about .container:nth-child(2)::after {
+  content: "";
+  background-image: url("/images/ghost-150px.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 150px;
+  display: block;
+  margin-left: 40%;
+  animation: shakeUp 3s infinite;
+}
 
 /* Keyframes for shaking animation */
 @keyframes shakeUp {
