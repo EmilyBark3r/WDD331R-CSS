@@ -129,12 +129,12 @@ article,
   0%,
   100% {
     opacity: 0.1;
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
 
   50% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
 
@@ -191,7 +191,7 @@ article,
       height: 100%;
       display: block;
       margin-top: 20%;
-      margin-left: 70%;
+      margin-left: 8%;
     }
   }
 

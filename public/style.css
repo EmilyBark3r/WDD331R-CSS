@@ -244,11 +244,11 @@ article .container,
 @keyframes disappear {
   0%, 100% {
     opacity: 0.1;
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
   50% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
 /* Media query for larger screens */
@@ -296,7 +296,7 @@ article .container,
     height: 100%;
     display: block;
     margin-top: 20%;
-    margin-left: 70%;
+    margin-left: 8%;
   }
 
   /* About section styles for larger screens */
@@ -490,6 +490,18 @@ nav ul li {
   margin: 0.25rem;
   flex-basis: calc(50%-50px);
   margin-bottom: 10px;
+}
+
+#about section:nth-child(2) {
+  position: relative;
+}
+#about section:nth-child(2) p:nth-of-type(2) {
+  align-self: center;
+  margin-top: 2rem;
+  color: var(--color-secondary);
+  font-size: 1.5em;
+  font-weight: var(--font-weight-strong);
+  text-align: center;
 }
 
 #files a {
