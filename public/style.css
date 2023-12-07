@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Aboreto&family=Creepster&family=Henny+Penny&family=Irish+Grover&family=Jolly+Lodger&family=Mountains+of+Christmas&family=Rubik+Wet+Paint&family=Young+Serif&family=Metal+Mania&family=Work+Sans:wght@400;600&family=Bebas+Neue&family=Nosifer&display=swap");
 :root {
   --color-primary: #3a00ff;
-  --color-primary-alt: #ff6d00;
-  --color-secondary: #99aa38;
-  --color-background: #09090e;
+  --color-primary-alt: #FF6D00;
+  --color-secondary: #99AA38;
+  --color-background: #09090E;
   --color-text: #412d86;
   --color-light: #fff;
   --color-anchor: #3a00ff;
-  --font-family: "Bebas Neue", sans-serif;
+  --font-family: "Bebas Neue",
+  sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -50,7 +51,7 @@ h4 {
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
-  color: #99aa38;
+  color: #99AA38;
   background-color: var(--color-background);
   padding: 0.25em 0.5em;
   font-family: "Nosifer";
@@ -112,7 +113,7 @@ a {
 /* Base styles for the body */
 body {
   background-color: var(--color-background);
-  color: #e8e9f3;
+  color: #E8E9F3;
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
@@ -153,8 +154,7 @@ article .container,
   transform-origin: center;
 }
 @keyframes rotateLeftRight {
-  0%,
-  100% {
+  0%, 100% {
     transform: rotate(0deg);
   }
   50% {
@@ -212,8 +212,7 @@ article .container,
 
 /* Keyframes for disappearing animation */
 @keyframes disappear {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0.1;
     transform: scale(0.8);
   }
@@ -433,7 +432,7 @@ header .container a:nth-child(4) {
 }
 nav {
   background-color: var(--color-background);
-  box-shadow: 0 20px 55px #e8e9f3;
+  box-shadow: 0 20px 55px #E8E9F3;
   border-radius: 0 40px 0 40px;
 }
 nav ul {
@@ -454,7 +453,7 @@ nav ul a {
 nav ul a:hover {
   font-family: "Creepster";
   color: var(--color-secondary);
-  text-shadow: 0 5px 5px #720e07;
+  text-shadow: 0 5px 5px #720E07;
   font-size: 25px;
 }
 nav ul li {
@@ -564,14 +563,14 @@ nav ul li {
   padding: 0.5em;
 }
 
-[class^="link"]:not(.link-codepen) {
+[class^=link]:not(.link-codepen) {
   min-height: 3em;
   background-color: var(--color-background);
   box-shadow: 0 20px 50px #240046;
   border-radius: 0 40px 0 40px;
 }
 
-[class^="link"]:not(.link-codepen),
+[class^=link]:not(.link-codepen),
 .profile .container > a {
   display: inline-flex;
   align-items: center;
@@ -584,14 +583,13 @@ nav ul li {
   text-decoration: none;
   color: var(--color-secondary);
 }
-[class^="link"]:not(.link-codepen):hover,
-[class^="link"]:not(.link-codepen):focus,
+[class^=link]:not(.link-codepen):hover, [class^=link]:not(.link-codepen):focus,
 .profile .container > a:hover,
 .profile .container > a:focus {
   border-radius: 40px 0px 40px 0px;
   transform: translate(-0.15em, -0.15em);
-  color: #720e07;
-  background-color: #e8e9f3;
+  color: #720E07;
+  background-color: #E8E9F3;
   font-weight: bold;
 }
 
