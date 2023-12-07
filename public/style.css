@@ -244,15 +244,15 @@ article .container,
 @keyframes disappear {
   0%, 100% {
     opacity: 0.1;
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
   50% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
 /* Media query for larger screens */
-@media (min-width: 992px) {
+@media (min-width: 160ch) {
   main #about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -296,7 +296,7 @@ article .container,
     height: 100%;
     display: block;
     margin-top: 20%;
-    margin-left: 70%;
+    margin-left: 8%;
   }
 
   /* About section styles for larger screens */
@@ -307,7 +307,7 @@ article .container,
     width: 100%;
     height: 100%;
     display: block;
-    margin-left: 40%;
+    margin-left: 0%;
   }
   #about .container:nth-child(2)::after {
     content: "";
@@ -492,6 +492,18 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+#about section:nth-child(2) {
+  position: relative;
+}
+#about section:nth-child(2) p:nth-of-type(2) {
+  align-self: center;
+  margin-top: 2rem;
+  color: var(--color-secondary);
+  font-size: 1.5em;
+  font-weight: var(--font-weight-strong);
+  text-align: center;
+}
+
 #files a {
   display: grid;
   place-content: center;
@@ -535,7 +547,7 @@ nav ul li {
 .profile ul li span:nth-child(1) {
   margin-right: 0.25em;
 }
-@media (min-width: 180ch) {
+@media (min-width: 160ch) {
   .profile {
     position: fixed;
     right: 0;
