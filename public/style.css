@@ -535,7 +535,7 @@ nav ul li {
 .profile ul li span:nth-child(1) {
   margin-right: 0.25em;
 }
-@media (min-width: 180ch) {
+@media (min-width: 160ch) {
   .profile {
     position: fixed;
     right: 0;
