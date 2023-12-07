@@ -290,7 +290,7 @@ article .container,
   /* Styles for the tombstone */
   #styles::before {
     content: "";
-    background-image: url("/images/tombstone.png");
+    background-image: url("/images/tombstone-350px.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
